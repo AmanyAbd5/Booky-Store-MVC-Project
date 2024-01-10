@@ -1,0 +1,55 @@
+﻿@model IEnumerable<RolesViewModel>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row pt-4 pb-3">
+        <div class="col-6">
+            <h1 class="text-primary">Roles List</h1>
+        </div>
+        <div class="col-6 text-end ">
+            <a asp-controller="Roles" asp-action="Create" class="btn btn-warning">
+                <i class="bi bi-plus-circle"></i> Create New Role
+            </a>
+        </div>
+    </div>
+
+
+    @if (Model != null && Model.Any())
+    {
+        <table id="tblData" class="table table-bordered table-striped " style="width:100%">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Normalized Name</th>
+         
+
+                    <th></th>
+
+                </tr>
+            </thead>
+
+        </table>
+    }
+    else
+    {
+        <div class="bg-warning mt-3">
+            <h2>No Roles Exist</h2>
+        </div>
+    }
+</div>
+
+
+@section Scripts{
+    <script src="~/js/Roles.js"></script>
+    <script>
+        $(document).ready(function () {
+            loadDataTable()
+        })
+    </script>
+}
+
+

@@ -1,0 +1,102 @@
+﻿@model ProductViewModel
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<form method="post" enctype="multipart/form-data">
+    <div class="row border p-3 mt-4">
+
+ 
+    <div class=" col">
+        <div class="row pb-2">
+            <h2 class="text-primary">Delete Category</h2>
+            <hr />
+        </div>
+
+       
+
+        <div class="row mb-3 p-1">
+            <label asp-for="Title" class="p-0">Product Title</label>
+            <input asp-for="Title" class="form-control" type="text" disabled />
+        </div>
+        <div class="row mb-3 p-1">
+            <label asp-for="Description" class="p-0">Product Description</label>
+            <input asp-for="Description" class="form-control" type="text" disabled />
+        </div>
+        <div class="row mb-3 p-1">
+            <label asp-for="Author" class="p-0">Product Author</label>
+            <input asp-for="Author" class="form-control" type="text" disabled />
+        </div>
+        <div class="row mb-3 p-1">
+            <label asp-for="ISBN" class="p-0">Product ISBN </label>
+            <input asp-for="ISBN" class="form-control" type="text" disabled />
+        </div>
+        <div class="row mb-3 p-1">
+            <label asp-for="ListPrice" class="p-0">Product List Price</label>
+            <input asp-for="ListPrice" class="form-control" type="number" disabled />
+        </div>
+        <div class="row mb-3 p-1">
+            <label asp-for="Price" class="p-0">Product Price</label>
+            <input asp-for="Price" class="form-control" type="number" disabled />
+        </div>
+        <div class="row mb-3 p-1">
+            <label asp-for="Price50" class="p-0">Product Price50</label>
+            <input asp-for="Price50" class="form-control" type="number" disabled />
+        </div>
+        <div class="row mb-3 p-1">
+            <label asp-for="Price100" class="p-0">Product Price100</label>
+            <input asp-for="Price100" class="form-control" type="number" disabled />
+        </div>
+
+        
+        <div class="row mb-3 p-1">
+           <label asp-for="CategoryId" class="p-0">Product Category</label>
+            <input class="form-control" value="@ViewBag.CategoryName" disabled />
+
+            <span asp-validation-for="CategoryId" class="text-danger"></span>
+        </div>
+
+       @* <div class="col-2 ">
+            @if (!string.IsNullOrEmpty(Model.ImageURL))
+            {
+                <label asp-for="CategoryId" class="p-0">Product Image</label>
+                    <div>
+                        <img src="~/files/images/@Model.ImageURL" alt="@Model.Title Book" class="img-thumbnail" /> 
+                        <input type="hidden" asp-for="ImageURL" value="@Model.ImageURL" />
+                        </div>
+
+            }
+
+        </div>*@
+
+        
+
+        <div class="row">
+            <div class="col-6 col-md-3">
+                <button type="submit" class="btn btn-primary form-control">Delete</button>
+            </div>
+            <div class="col-6 col-md-3">
+                <a asp-controller="Product" asp-action="Index" class="btn btn-success border form-control"><i class="bi bi-arrow-return-left"></i>  To List</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="col-2 ">
+        @if (!string.IsNullOrEmpty(Model.ImageURL))
+        {
+            
+            <div>
+                <img src="~/files/images/@Model.ImageURL" alt="@Model.Title Book" class="img-thumbnail" />
+                <input type="hidden" asp-for="ImageURL" value="@Model.ImageURL" />
+            </div>
+
+        }
+
+    </div>
+
+    </div>
+</form>
+
+

@@ -1,0 +1,56 @@
+﻿@model ProductViewModel
+
+<div class="row mb-3 p-1">
+    <label asp-for="Title" class="p-0">Product Title</label>
+    <input asp-for="Title" class="form-control" type="text" />
+    <span asp-validation-for="Title" class="text-danger"></span>
+</div>
+<div class="row mb-3 p-1">
+    <label asp-for="Description" class="p-0">Product Description</label>
+    <input asp-for="Description" class="form-control" type="text" />
+    <span asp-validation-for="Description" class="text-danger"></span>
+</div>
+<div class="row mb-3 p-1">
+    <label asp-for="Author" class="p-0">Product Author</label>
+    <input asp-for="Author" class="form-control" type="text" />
+    <span asp-validation-for="Author" class="text-danger"></span>
+</div>
+<div class="row mb-3 p-1">
+    <label asp-for="ISBN" class="p-0">Product ISBN </label>
+    <input asp-for="ISBN" class="form-control" type="text" />
+    <span asp-validation-for="ISBN" class="text-danger"></span>
+</div>
+<div class="row mb-3 p-1">
+    <label asp-for="ListPrice" class="p-0">Product List Price</label>
+    <input asp-for="ListPrice" class="form-control" type="number" />
+    <span asp-validation-for="ListPrice" class="text-danger"></span>
+</div>
+<div class="row mb-3 p-1">
+    <label asp-for="Price" class="p-0">Product Price</label>
+    <input asp-for="Price" class="form-control" type="number" />
+    <span asp-validation-for="Price" class="text-danger"></span>
+</div>
+<div class="row mb-3 p-1">
+    <label asp-for="Price50" class="p-0">Product Price50</label>
+    <input asp-for="Price50" class="form-control" type="number" />
+    <span asp-validation-for="Price50" class="text-danger"></span>
+</div>
+<div class="row mb-3 p-1">
+    <label asp-for="Price100" class="p-0">Product Price100</label>
+    <input asp-for="Price100" class="form-control" type="number" />
+    <span asp-validation-for="Price100" class="text-danger"></span>
+</div>
+
+<div class="row mb-3 p-1">
+    <label asp-for="CategoryId" class="p-0">Product Category</label>
+    <select asp-for="CategoryId" asp-items="@ViewBag.catSelectListItems">
+        <option selected disabled>--Select Category--</option>
+    </select>
+    <span asp-validation-for="CategoryId" class="text-danger"></span>
+</div>
+
+<div class="row mb-3 p-1">
+    <label asp-for="Image" class="p-0">Upload Image</label>
+    <input asp-for="Image" type="file" id="Image" name="Image" class="form-control" accept="images/*" />
+    
+</div>

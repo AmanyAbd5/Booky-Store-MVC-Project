@@ -1,0 +1,41 @@
+﻿@model ProductViewModel
+@{
+    ViewData["Title"] = "Edit";
+}
+<form method="post" enctype="multipart/form-data">
+    <div class="border p-3 mt-4 row">
+        <div class="col">
+
+            <div class="row pb-2">
+                <h2 class="text-primary">Edit Product</h2>
+                <hr />
+            </div>
+            <partial name="PartialView/CreateUpdateProductPV" />
+
+
+            <div class="row">
+                <div class="col-6 col-md-3">
+                    <button type="submit" class="btn btn-primary form-control">Edit</button>
+                </div>
+                <div class="col-6 col-md-3">
+                    <a asp-controller="Product" asp-action="Index" class="btn btn-success border form-control"><i class="bi bi-arrow-return-left"></i>  To List</a>
+                </div>
+            </div>
+
+        </div>
+       
+
+        <div class="col-2">
+            @if (!string.IsNullOrEmpty(Model.ImageURL))
+            {
+                    <div>
+                        <img src="~/files/images/@Model.ImageURL" alt="@Model.Title Book" class="img-thumbnail" /> 
+                        <input type="hidden" asp-for="ImageURL" value="@Model.ImageURL" />
+                        </div>
+
+            }
+
+        </div>
+    </div>
+</form>
+

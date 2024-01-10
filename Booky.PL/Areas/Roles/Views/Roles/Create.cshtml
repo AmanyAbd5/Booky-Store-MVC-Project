@@ -1,0 +1,36 @@
+﻿@model RolesViewModel
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<form method="post">
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">Create Role</h2>
+            <hr />
+        </div>
+        <div class="row mb-3 p-1">
+            <label asp-for="name" class="p-0"> Name</label>
+            <input asp-for="name" class="form-control" />
+            <span asp-validation-for="name" class="text-danger"></span>
+        </div>
+        <div class="row mb-3 p-1">
+            <label asp-for="NormalizedName" class="p-0">Normalized Name</label>
+            <input asp-for="NormalizedName" class="form-control" />
+            <span asp-validation-for="NormalizedName" class="text-danger"></span>
+        </div>
+        
+
+
+        <div class="row">
+            <div class="col-6 col-md-3">
+                <button type="submit" asp-action="Create" class="btn btn-primary form-control">Create</button>
+            </div>
+            <div class="col-6 col-md-3">
+                <a asp-controller="Roles" asp-action="Index" class="btn btn-success border form-control"><i class="bi bi-arrow-return-left"></i>  To List</a>
+            </div>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,43 @@
+﻿@model UsersViewModel
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form method="post">
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">Edit User</h2>
+            <hr />
+        </div>
+        <div class="row mb-3 p-1">
+            <label asp-for="Fname" class="p-0">First Name</label>
+            <input asp-for="Fname" class="form-control" />
+            <span asp-validation-for="Fname" class="text-danger"></span>
+        </div>
+        <div class="row mb-3 p-1">
+            <label asp-for="Lname" class="p-0">Last Name</label>
+            <input asp-for="Lname" class="form-control" />
+            <span asp-validation-for="Lname" class="text-danger"></span>
+        </div>
+        <div class="row mb-3 p-1">
+            <label asp-for="Email" class="p-0">Email </label>
+            <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+        <div class="row mb-3 p-1">
+            <label asp-for="Password" class="p-0">Password</label>
+            <input type="Password" asp-for="Password" class="form-control" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+
+        <div class="row">
+            <div class="col-6 col-md-3">
+                <button type="submit" asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary form-control">Update</button>
+            </div>
+            <div class="col-6 col-md-3">
+                <a asp-controller="Users" asp-action="Index" class="btn btn-success border form-control"><i class="bi bi-arrow-return-left"></i> To List</a>
+            </div>
+        </div>
+    </div>
+</form>
