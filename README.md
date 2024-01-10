@@ -1,5 +1,7 @@
 Booky Store 
+
 MVC Project
+
 I have developed a comprehensive project that encompasses user registration, login, and signup functionalities. The application shows books, categories, users, and roles providing users with the ability to add, delete, and modify these elements. To ensure secure access, I have implemented an authorization that restricts access to certain pages unless the user is logged in. Additionally, a 'Remember Me' feature is incorporated; when selected, the browser saves the user's token, eliminating the need for login upon revisiting the site. However, if the user opts not to use this feature, they will be prompted to log in upon returning to the site
 
 Register 
