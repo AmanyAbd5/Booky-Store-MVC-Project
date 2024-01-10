@@ -24,11 +24,15 @@ Product: The product section displays all available products, providing options 
 
 ![image](https://github.com/AmanyAbd5/Booky-Store-MVC-Project/assets/92439170/b5ba8689-1337-4cc3-833f-5200c27ece63)
 
-Users : The users section displays all available users, providing options to create, modify, and delete users as needed
+![image](https://github.com/AmanyAbd5/Booky-Store-MVC-Project/assets/92439170/ec92af1b-8382-4652-9b5b-289148957df9)
+![image](https://github.com/AmanyAbd5/Booky-Store-MVC-Project/assets/92439170/bc913a28-5875-4e61-bfc1-4c9b864665aa)
+
+
+Users: The user's section displays all available users, providing options to create, modify, and delete users as needed
 
 ![image](https://github.com/AmanyAbd5/Booky-Store-MVC-Project/assets/92439170/ae8cb7ba-1291-45a6-9cd1-dd93dbbf805c)
 
-Roles : The roles section displays all available roles, providing options to create, modify, and delete roles as needed
+Roles: The roles section displays all available roles, providing options to create, modify, and delete roles as needed
 
 ![image](https://github.com/AmanyAbd5/Booky-Store-MVC-Project/assets/92439170/6306bbe2-119c-45b3-8dd7-ceb426c71de5)
 
