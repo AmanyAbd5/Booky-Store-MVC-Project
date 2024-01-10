@@ -3,14 +3,14 @@ Booky-Store-MVC-Project
 Register 
 ![image](https://github.com/AmanyAbd5/Booky-Store-MVC-Project/assets/92439170/2018a36f-db89-4991-b5a4-235a71e0c9e0)
 
-login 
+Login 
 ![image](https://github.com/AmanyAbd5/Booky-Store-MVC-Project/assets/92439170/7da361fd-6215-4a26-9dc4-a65bd530da96)
 
 Reset Password: When an email address is entered, a link is sent to that email, allowing the user to change their password.
 ![image](https://github.com/AmanyAbd5/Booky-Store-MVC-Project/assets/92439170/d03c6f3e-f631-432d-993a-18cd44752b55)
 
 
-Categories : The Category section displays all available categories, providing options to create, modify, and delete categories as needed, It is possible to arrange items based on specific criteria. For instance, if I wish to arrange them by name, I can click on the arrow next to the name, and the ordering can be done either in descending or ascending order. Additionally, a search functionality is available for various criteria. Furthermore, I've implemented the option to display products in sets of 10, 25, 50, or 100 for user convenience
+Categories: The Category section displays all available categories, providing options to create, modify, and delete categories as needed
 
 ![image](https://github.com/AmanyAbd5/Booky-Store-MVC-Project/assets/92439170/74366290-7eab-40d1-b65b-159ad369b27a)
 
@@ -20,7 +20,7 @@ Categories : The Category section displays all available categories, providing o
 
 ![image](https://github.com/AmanyAbd5/Booky-Store-MVC-Project/assets/92439170/8d801fc2-3fa3-4550-9dbb-2225d8bb044a)
 
-Product: The product section displays all available products, providing options to create, modify, and delete products as needed
+Product: The product section displays all available products, providing options to create, modify, and delete products as needed, It is possible to arrange items based on specific criteria. For instance, if I wish to arrange them by name, I can click on the arrow next to the name, and the ordering can be done either in descending or ascending order. Additionally, a search functionality is available for various criteria. Furthermore, I've implemented the option to display products in sets of 10, 25, 50, or 100 for user convenience
 
 ![image](https://github.com/AmanyAbd5/Booky-Store-MVC-Project/assets/92439170/b5ba8689-1337-4cc3-833f-5200c27ece63)
 
